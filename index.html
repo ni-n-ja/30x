@@ -4,18 +4,19 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="icon" href="ninja.ico" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+  <!--
   <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
   <script type="text/javascript" src="velocity.min.js"></script>
+  -->
   <script type="text/javascript" src="web.js"></script>
   <title>ni_n_ja</title>
 </head>
 
-<body ng-app="myApp" ng-controller="myController">
+<body ng-app="myApp" ng-controller="myController" ng-keypress="onKeydown($event)">
   <div class="background">
 
-    <div class="text-area">
+    <div class="text-area" ng-click="hoge()">
 
       <div class="text">
         <p class="moji">
