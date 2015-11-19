@@ -1,32 +1,45 @@
 @charset "utf-8";
 @import url(//fonts.googleapis.com/css?family=Geo);
-body {
+body,
+html {
+  height: 99%;
   background-color: #000;
+  overflow: hidden;
 }
 
 .background {
+  position: relative;
   background-color: white;
   width: 90%;
-  height: 200px;
+  height: 100%;
   margin: 0 auto;
-}
-
-.moji {
-  text-decoration: none;
-  color: black;
-  font-family: 'Geo', sans-serif;
 }
 
 .text-area {
   position: relative;
-  background-color: gray;
+  background-image: url("img/text-area.png");
+  background-size: cover;
   width: 100%;
-  top:80%;
+  top: 70%;
   height: 20%;
   margin: 0 auto;
 }
 
 .text {
+  text-decoration: none;
+  color: black;
+  font-family: 'Geo', sans-serif;
+  font-size: 1.6em;
   position: relative;
-  left: 20px;
+  text-shadow: 0px 0px 4px #03F;
+  top: 10px;
+  margin: 0px 10%;
+}
+
+.human {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 50px;
+  left: 500px;
 }
